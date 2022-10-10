@@ -10,6 +10,6 @@ const carModel = new CarsModel();
 const carService = new CarsService(carModel, carZodSchema);
 const carController = new CarsController(carService);
 
-carsRouter.post('/cars', carController.create);
+carsRouter.post('/cars', (req, res) => carController.create(req, res));
 
 export default carsRouter;
