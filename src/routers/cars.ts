@@ -1,8 +1,8 @@
 import { Router } from 'express';
 import { carZodSchema } from '../interfaces/ICar';
-import CarsController from '../controllers/CarsController';
 import CarsModel from '../models/CarsModel';
 import CarsService from '../services/CarsService';
+import CarsController from '../controllers/CarsController';
 
 const carsRouter = Router();
 
