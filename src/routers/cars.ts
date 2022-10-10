@@ -11,5 +11,6 @@ const carService = new CarsService(carModel, carZodSchema);
 const carController = new CarsController(carService);
 
 carsRouter.post('/cars', (req, res) => carController.create(req, res));
+carsRouter.get('/cars', (req, res) => carController.read(req, res));
 
 export default carsRouter;
