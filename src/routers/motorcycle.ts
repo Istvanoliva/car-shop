@@ -14,5 +14,6 @@ motorcycleRouter.post('/motorcycles', (req, res) => motorcycleController.create(
 motorcycleRouter.get('/motorcycles', (req, res) => motorcycleController.read(req, res));
 motorcycleRouter.get('/motorcycles/:id', (req, res) => motorcycleController.readOne(req, res));
 motorcycleRouter.put('/motorcycles/:id', (req, res) => motorcycleController.update(req, res));
+motorcycleRouter.delete('/motorcycles/:id', (req, res) => motorcycleController.delete(req, res));
 
 export default motorcycleRouter;
