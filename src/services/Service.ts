@@ -30,7 +30,6 @@ abstract class Service<T> implements IService<T> {
 
     const updated = await this._model.update(_id, parsed.data);
     if (!updated) throw new Error(ErrorTypes.EntityNotFound);
-
     return updated;
   }
 
